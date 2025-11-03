@@ -5,6 +5,7 @@ export default function App() {
     <EventCmp
       title="test"
       imgSrc="https://accesso.com/wp-content/uploads/2025/10/iStock-1457133902-1024x681.jpg"
+      body="lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum lorep ipsum"
     />
   );
 }
