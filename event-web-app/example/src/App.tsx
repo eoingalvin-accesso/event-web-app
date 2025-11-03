@@ -1,20 +1,10 @@
-import { Text, View, StyleSheet } from 'react-native';
-import { multiply } from 'react-native-event-web-app';
-
-const result = multiply(3, 7);
+import { EventCmp } from 'react-native-event-web-app';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Result: {result}</Text>
-    </View>
+    <EventCmp
+      title="test"
+      imgSrc="https://accesso.com/wp-content/uploads/2025/10/iStock-1457133902-1024x681.jpg"
+    />
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
