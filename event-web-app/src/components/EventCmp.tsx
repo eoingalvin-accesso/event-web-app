@@ -1,20 +1,15 @@
-import { Text, View, StyleSheet, Image } from 'react-native';
+import { Text, View, StyleSheet } from 'react-native';
 
 type FakeEventType = {
   title: string;
-  imgSrc: string;
   body: string;
 };
 
-export const EventCmp: React.FC<FakeEventType> = ({ title, imgSrc, body }) => {
+export const EventCmp: React.FC<FakeEventType> = ({ title, body }) => {
   return (
     <View style={styles.container}>
-      <Text>{title}</Text>
-      <Image
-        source={{ uri: imgSrc }}
-        style={{ width: '100%', aspectRatio: 3 }}
-      />
-      <Text>{body}</Text>
+      <Text style={styles.title}>{title}</Text>
+      <Text style={styles.body}>{body}</Text>
     </View>
   );
 };
@@ -24,4 +19,6 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
   },
+  title: { fontSize: 40, backgroundColor: '#FF0000' },
+  body: { fontSize: 24, backgroundColor: '#FFFF00' },
 });
