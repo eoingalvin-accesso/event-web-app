@@ -1,0 +1,111 @@
+export const perfectNorthEvents = [
+  {
+    associatedPois: [{ id: 'ff300635-a39f-4125-a017-99b358fe57b7' }],
+    attributes: [],
+    description: 'Event that happens multiple times a day',
+    displayCategories: [
+      { id: '58f2b03a-f6e2-4b3f-adea-66e78c9fc28a' },
+      { id: 'bf1de593-2be6-450e-aca6-773866bd55b5' },
+    ],
+    id: '09103b45-8d5e-4d28-986c-af71a27d13a1',
+    images: [
+      {
+        crop: '81x0:1520x950',
+        src: '/perfect-north/PN_PNS/client/b7976d43-79d3-4eb1-b793-041fb681f09f/cat-tester.jpeg',
+        type: 'MAIN',
+      },
+      {
+        crop: '81x0:1520x950',
+        src: '/perfect-north/PN_PNS/client/b7976d43-79d3-4eb1-b793-041fb681f09f/cat-tester.jpeg',
+        type: 'MAIN',
+      },
+    ],
+    missingTranslations: [],
+    promoted: true,
+    suggestedArrival: 'ON_TIME',
+    title: 'Automation Purposes - Multiple Times In a Day',
+    startDate: '2025-11-03T20:00:00-05:00',
+  },
+  {
+    associatedPois: [{ id: '9bab2de7-e90f-4600-931e-fd892151a015' }],
+    attributes: [],
+    description: 'All day event',
+    displayCategories: [
+      { id: '58f2b03a-f6e2-4b3f-adea-66e78c9fc28a' },
+      { id: 'bf1de593-2be6-450e-aca6-773866bd55b5' },
+    ],
+    id: '38b379ab-3677-4fae-8536-499e1fec0b5c',
+    images: [
+      {
+        crop: '81x0:1520x950',
+        src: '/perfect-north/PN_PNS/client/b7068cb5-9d69-4abd-b680-5b0e962fb836/cat-tester.jpeg',
+        type: 'MAIN',
+      },
+    ],
+    missingTranslations: [],
+    promoted: true,
+    suggestedArrival: 'ANYTIME',
+    title: 'Automation Purposes - All day event',
+    startDate: '2025-11-03T00:00:00-05:00',
+  },
+  {
+    associatedPois: [{ id: 'da2636b6-76b7-4ddc-9913-2ba0164f42bf' }],
+    attributes: [],
+    description: 'Event happens once a day',
+    displayCategories: [
+      { id: '58f2b03a-f6e2-4b3f-adea-66e78c9fc28a' },
+      { id: 'bf1de593-2be6-450e-aca6-773866bd55b5' },
+    ],
+    id: '50cbc916-71c9-46c7-b331-af7e34decfab',
+    images: [
+      {
+        crop: '81x0:1520x950',
+        src: '/perfect-north/PN_PNS/client/64df6d83-0565-4e39-85fc-69366d5c9205/cat-tester.jpeg',
+        type: 'MAIN',
+      },
+    ],
+    missingTranslations: [],
+    promoted: true,
+    suggestedArrival: 'EARLY',
+    title: 'Automation Purposes - Once a day',
+    startDate: '2025-11-03T21:00:00-05:00',
+  },
+  {
+    associatedPois: [
+      { id: '3aeae7a2-30f3-4a90-80b1-61100fe91a40' },
+      { id: 'e39864f1-f2ed-4d4d-8c79-557ed4924750' },
+      { id: 'ff300635-a39f-4125-a017-99b358fe57b7' },
+    ],
+    attributes: [],
+    description: 'Event with multiple locations',
+    displayCategories: [
+      { id: '58f2b03a-f6e2-4b3f-adea-66e78c9fc28a' },
+      { id: 'bf1de593-2be6-450e-aca6-773866bd55b5' },
+    ],
+    id: '73203cae-2956-405b-8f25-d6f8f53df8de',
+    images: [
+      {
+        crop: '81x0:1520x950',
+        src: '/perfect-north/PN_PNS/client/bedfbb3e-9525-4152-a0c8-97c9939b83bf/cat-tester.jpeg',
+        type: 'MAIN',
+      },
+    ],
+    missingTranslations: [],
+    promoted: true,
+    suggestedArrival: 'ANYTIME',
+    title: 'Automation Purposes - Multiple Locations',
+    startDate: '2025-11-03T00:00:00-05:00',
+  },
+  {
+    associatedPois: [{ id: '3aeae7a2-30f3-4a90-80b1-61100fe91a40' }],
+    attributes: [],
+    displayCategories: [{ id: '58f2b03a-f6e2-4b3f-adea-66e78c9fc28a' }],
+    id: 'b2b720a2-b0b7-4c6a-881f-f28b4e7e5b14',
+    images: [],
+    missingTranslations: [],
+    promoted: true,
+    suggestedArrival: 'ANYTIME',
+    title: 'Automation All Day - PN (DO NOT REMOVE)',
+    startDate: '2022-07-19T00:00:00-04:00',
+  },
+];

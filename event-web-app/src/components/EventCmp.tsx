@@ -1,24 +1,40 @@
-import { Text, View, StyleSheet } from 'react-native';
+import { Dimensions, Image } from 'react-native';
+import { Text } from 'react-native';
+import { View, StyleSheet } from 'react-native';
 
 type FakeEventType = {
-  title: string;
-  body: string;
+  event: any;
 };
 
-export const EventCmp: React.FC<FakeEventType> = ({ title, body }) => {
+export const EventCmp: React.FC<FakeEventType> = ({ event }) => {
+  const imageUrl =
+    'https://img.te2.io/unsafe/origxorig' + event?.images?.[0]?.src;
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>{title}</Text>
-      <Text style={styles.body}>{body}</Text>
+      <View style={styles.imageContainer}>
+        <Image style={styles.image} source={{ uri: imageUrl }} />
+      </View>
+      <Text style={styles.title}>{event.title}</Text>
     </View>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    alignItems: 'center',
+    width: '100%',
+    height: '100%',
   },
-  title: { fontSize: 40, backgroundColor: '#FF0000' },
-  body: { fontSize: 24, backgroundColor: '#FFFF00' },
+  image: {
+    width: '100%',
+    height: '100%',
+  },
+  imageContainer: {
+    width: Dimensions.get('window').width,
+    aspectRatio: 1.77,
+  },
+  title: {
+    fontSize: 28,
+    fontWeight: 600,
+    alignSelf: 'center',
+  },
 });
